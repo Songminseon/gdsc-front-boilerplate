@@ -14,12 +14,22 @@ body {
   min-height: 100%;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: none;
+  font-family: "Noto Sans KR", sans-serif;
+  overflow: auto;
 }
 
 #root {
   max-width: 500px;
   height: 100%;
   margin: 0 auto;
+}
+
+.top-navigation {
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  top: 0px;
+  height: 48px;
 }
 
 .bottom-navigation {
@@ -29,10 +39,35 @@ body {
   bottom: 0px;
 }
 
+.fixed-button {
+  position: fixed;
+  bottom: 8px;
+  left: calc(50% - 36px);
+}
+
 .arrange-center {
   display: flex;
   align-items: center;
+}
+
+.arrange-center-center {
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.board-wrapper {
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -41,14 +76,28 @@ h3,
 h4,
 h5,
 p,
+a,
 li,
 ul,
 div,
 input,
 label,
+button,
 strong,
 span {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.1;
   color: #292929;
+  font-weight: 500;
+}
+
+textarea {
+  all: unset;
+  cursor: auto;
+  caret-color: #c62917;
+}
+input {
+  caret-color: #c62917;
 }
