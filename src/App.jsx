@@ -9,6 +9,7 @@ import Login from "./pages/Account/Login";
 import Signup from "./pages/Account/Signup";
 
 import Test from "./pages/Test";
+import Setting from "./pages/Setting";
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/test" component={Test} />
+
+        <Route exact path="/setting" component={Setting} />
       </Switch>
     </BrowserRouter>
   );
